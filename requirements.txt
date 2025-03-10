@@ -1,4 +1,8 @@
 numpy
 pandas
 matplotlib
+seaborn
 scikit-learn
+dill
+imblearn
+xgboost
