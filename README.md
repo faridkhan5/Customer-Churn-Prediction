@@ -1,6 +1,8 @@
 # Customer-Churn-Prediction
 An end-to-end customer churn prediction project that aims to predict customer churn based on various features.
 
+![website_image](customer_churn_img.png)
+
 ## EDA
 * Analyzed categorical and numerical features to identify patterns in customer churn.
 * Used count plots and KDE plots to visualize churn distribution.
