@@ -6,3 +6,4 @@ scikit-learn
 dill
 imblearn
 xgboost
+streamlit

@@ -1,7 +1,7 @@
 import sys
-from components import DataIngestion, DataTransformation, ModelTrainer
-from logger import logging
-from exception import CustomException
+from src.components import DataIngestion, DataTransformation, ModelTrainer
+from src.logger import logging
+from src.exception import CustomException
 
 
 class TrainingPipeline:
