@@ -1,7 +1,7 @@
-from config import ModelTrainerConfig
-from logger import logging
-from exception import CustomException
-from utils import save_object, evaluate_models
+from src.config import ModelTrainerConfig
+from src.logger import logging
+from src.exception import CustomException
+from src.utils import save_object, evaluate_models
 import sys
 
 from sklearn.linear_model import LogisticRegression

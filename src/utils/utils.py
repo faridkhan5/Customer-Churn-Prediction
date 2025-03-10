@@ -1,6 +1,6 @@
 import os
 import sys
-from exception import CustomException
+from src.exception import CustomException
 
 import numpy as np
 import pandas as pd
@@ -19,7 +19,7 @@ def save_object(file_path, obj):
         raise CustomException(e, sys)
     
 
-def load_object(file_path, obj):
+def load_object(file_path):
     try:
         with open(file_path, 'rb') as file:
             obj = dill.load(file)

@@ -1,6 +1,6 @@
-from config import DataIngestionConfig
-from logger import logging
-from exception import CustomException
+from src.config import DataIngestionConfig
+from src.logger import logging
+from src.exception import CustomException
 import sys
 
 from sklearn.model_selection import train_test_split

@@ -1,7 +1,7 @@
-from config import DataTransformationConfig
-from logger import logging
-from exception import CustomException
-from utils import save_object
+from src.config import DataTransformationConfig
+from src.logger import logging
+from src.exception import CustomException
+from src.utils import save_object
 import sys
 
 import pandas as pd
@@ -43,6 +43,17 @@ class DataTransformation:
             train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
 
+            # preprocessing
+            train_df.drop('customerID', axis=1, inplace=True)
+            test_df.drop('customerID', axis=1, inplace=True)
+            train_df['SeniorCitizen'] = train_df['SeniorCitizen'].replace({0: 'No', 1: 'Yes'})
+            test_df['SeniorCitizen'] = test_df['SeniorCitizen'].replace({0: 'No', 1: 'Yes'})
+            train_df['TotalCharges'] = train_df['TotalCharges'].replace({' ': 0})
+            test_df['TotalCharges'] = test_df['TotalCharges'].replace({' ': 0})
+            train_df['TotalCharges'] = train_df['TotalCharges'].astype(float)
+            test_df['TotalCharges'] = test_df['TotalCharges'].astype(float)
+
+            # transformation
             preprocessor = self.get_preprocessor()
 
             target_feature = 'Churn'
