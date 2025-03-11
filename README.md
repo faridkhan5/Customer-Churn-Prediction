@@ -1,7 +1,7 @@
 # Customer-Churn-Prediction
 An end-to-end customer churn prediction project that aims to predict customer churn based on various features.
 
-![website_image](customer_churn_img.png)
+![website_image](images/customer_churn_img.png)
 
 ## EDA
 * Analyzed categorical and numerical features to identify patterns in customer churn.
@@ -13,6 +13,8 @@ An end-to-end customer churn prediction project that aims to predict customer ch
     - electronic check payments have the highest churn (~80%) -> Certain payment methods are risk factors.
     - higher monthly charges lead to more churn -> Pricing strategy optimization needed
     - tenure is inversely related to churn ->  Long-term customers tend to stay.
+    
+    ![eda_image](images/customer_churn_eda.png)
 
 ## Preprocessing
 * Feature Scaling: Standardized numerical features to prevent model bias.
