@@ -32,5 +32,7 @@ An end-to-end customer churn prediction project that aims to predict customer ch
 ## Results
 * Best Model: Random Forest Classifier (with Downsampling)
     * Threshold Tuning: Adjusted probability cut-off to 0.44 to optimize recall while balancing precision.
-    * recall improvement: 50%
+    * Accuracy: 0.71
+    * Recall: 0.90
     * accuracy tradeoff: -14%
+    * recall improvement: 74%
